@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Contractor's Protection Plan</title>
+
+    <style>
+
+        body {
+            background-image: url('https://chicagotap.org/wp-content/uploads/2015/10/Black-Background-Wood-011.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 1;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            border-bottom: 1px solid black;
+            height: 6rem;
+            width: 100%;
+            position: fixed;
+            display: inline-flex;
+            align-items: center;
+            z-index: 2;
+            background-color: white;
+            overflow: hidden;
+            top: 0;
+        }
+
+        .logo {
+            height: 4rem;
+            width: 5rem;
+            position: relative;
+            left: 1.5rem;
+            cursor: default;
+        }
+
+        .guide {
+            list-style-type: none;
+            display: inline-flex;
+        }
+
+        .guide li {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        .banner-menu {
+            position: absolute;
+            right: 1.5rem;
+            margin-top: 2.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background: white;
+            background-image: -webkit-linear-gradient(top, #87CEEB, #0066ff);
+            background-image: -moz-linear-gradient(top, #87CEEB, #0066ff);
+            background-image: -ms-linear-gradient(top, #87CEEB, #0066ff);
+            background-image: -o-linear-gradient(top, #87CEEB, #0066ff);
+            background-image: linear-gradient(to bottom, #87CEEB, #0066ff);
+            color: black;
+            font-size: 20px;
+            padding: 5px 10px 5px 10px;
+            text-decoration: none;
+            margin-left: .5rem;
+            margin-right: .5rem;
+        }
+        
+        .btn:hover {
+            color: black;
+            background-image: -webkit-linear-gradient(top, #0066ff, #87CEEB);
+            background-image: -moz-linear-gradient(top, #0066ff, #87CEEB);
+            background-image: -ms-linear-gradient(top, #0066ff, #87CEEB);
+            background-image: -o-linear-gradient(top, #0066ff, #87CEEB);
+            background-image: linear-gradient(to bottom, #0066ff, #87CEEB);
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 100%;
+        }
+
+        .jumbotron {
+            background-image: url('assets/General Contractor Banner.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+            text-align: center;
+        }
+
+        #white {
+            color: white;
+            width: 90%;
+            margin: 0 auto;
+            text-shadow: 2px 2px black;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+        }
+
+        #white-2 {
+            color: white;
+            width: 90%;
+            margin: 0 auto;
+            text-shadow: 2px 2px black;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+
+        .pt-3 {
+            padding-top: 3rem;
+        }
+
+        .pb-3 {
+            padding-bottom: 3rem;
+        }
+
+        .jeff-grid-container {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "jeff-img estimate";
+        }
+
+        .jeff-img { 
+            grid-area: jeff-img; 
+            width: 60%;
+            height: auto;
+            margin: 0 auto;
+            border-radius: 10rem;
+        }
+
+        .estimate { 
+            grid-area: estimate; 
+            width: 95%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding-right: 10rem;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        a {
+            color: #87CEEB;
+        }
+
+        .detail-grid-container {
+            padding-bottom: 5rem;
+            margin-bottom: 5rem;
+            padding-left: 2rem;
+            padding-right: 3rem;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "creditor tax-free returns";
+        }
+
+        .table-format {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px white solid;
+        }
+
+        .returns { 
+            grid-area: returns; 
+        }
+
+        .tax-free { 
+            grid-area: tax-free; 
+        }
+
+        .creditor { 
+            grid-area: creditor; 
+        }
+
+        .detail-img {
+            padding-top: 3rem;
+        }
+
+        h3 {
+            color: #87CEEB;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .detail-info {
+            font-size: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        footer {
+            height: auto;
+            background-color: white;
+        }
+
+        .footer-grid-container {
+            margin: 0 auto;
+            text-align: center; 
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "face insta twit linked";
+        }
+
+        .social {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .face { 
+            grid-area: face;
+        }
+
+        .insta { 
+            grid-area: insta; 
+        }
+
+        .twit { 
+            grid-area: twit; 
+        }
+
+        .linked { 
+            grid-area: linked; 
+        }
+
+        @media only screen and (max-width: 875px) {
+
+        .jeff-grid-container {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "jeff-img" 
+                "estimate";
+        }
+
+        .estimate { 
+            grid-area: estimate; 
+            width: 95%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding-right: 0;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        button {
+            height: 8rem;
+            width: 30rem;
+        }
+
+        .detail-grid-container {
+            padding-bottom: 5rem;
+            margin-bottom: 5rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 3rem 0px;
+            grid-template-areas:
+                "creditor"
+                "tax-free" 
+                "returns";
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="assets/logo.png" alt="logo" />
+        </div>
+        <nav class="banner-menu">
+            <ul class="guide">
+                <a class="btn" href="#top"><li>Home</li></a>
+                <a class="btn" href="#contact"><li>Contact Us</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="top">
+            <img class="logo-img" src="assets/CPP Logo.jpg">
+
+            <div class="jumbotron">
+                <h1 id="white">HOW EVERY CONTRACTOR CAN ACCUMULATE PROFITS AND GROW THEIR BUSINESS</h1>
+                <h2 id="white-2" >(Without Personal Assets Being Attached!)</h2>
+            </div>
+        </div>
+
+        <div class="jeff-grid-container pt-3 pb-3" id="contact">
+            <img class="jeff-img" src="assets/Jeff Newman headshot small.jpg">
+            <div class="estimate">
+                <h2 id="white-2" class="pt-3 pb-3">Call Jeff Newman TODAY for your free 30 minute strategy session <a href="tel:301-321-1914">(301)321-1914</a></h2>
+                <a href="https://calendly.com/jgnewman" target="_blank"><button class="btn">Book with Calendy.com!</button></a>
+            </div>
+        </div>
+
+        <div class="detail-grid-container pb-3 pt-3">
+        
+            <div class="creditor table-format">
+                <img class="detail-img" src="assets/credit card icon.png" />
+                <h3>CREDITOR<br>PROTECTION:</h3>
+                <p class="detail-info" id="white-2">Isolate your profits and business assets from creditors, expand without fear of legal attachment.</p>
+            </div>
+
+            <div class="tax-free table-format">
+                <img class="detail-img" src="assets/tax free icon.png" />
+                <h3>TAX-FREE GROWTH<br>AND INCOME:</h3>
+                <p class="detail-info" id="white-2">Safely grow your profits without current or future taxes, your money will compound faster and have more spending power later.</p>
+            </div>
+
+            <div class="returns table-format">
+                <img class="detail-img" src="assets/dollar sign icon.png" />
+                <h3>INDEPENDENT<br>RETURNS:</h3>
+                <p class="detail-info" id="white-2">Your investment will never lose its value, so you will always have a rainy day fund to get you through hard times.</p>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footer-grid-container">
+                <div class="face social">
+                    <a href="" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/96/000000/facebook.png"/></a>
+                </div>
+                <div class="insta social">
+                    <a href="" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/96/000000/instagram-new.png"/></a>
+                </div>
+                <div class="twit social">
+                    <a href="" target="_blank"><img src="https://img.icons8.com/material-sharp/96/000000/twitter.png"/></a>
+                </div>
+                <div class="linked social">
+                    <a href="" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/96/000000/linkedin.png"/></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
