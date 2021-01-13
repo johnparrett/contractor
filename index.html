@@ -157,6 +157,11 @@
             color: #87CEEB;
         }
 
+        .mapouter {
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+
         .detail-grid-container {
             padding-bottom: 5rem;
             margin-bottom: 5rem;
@@ -203,6 +208,20 @@
         .detail-info {
             font-size: 2rem;
             padding-bottom: 2rem;
+        }
+
+        .address {
+            text-align: center;
+            padding-top: 1rem;
+        }
+
+        .address-link {
+            color: black;
+        }
+
+        .address-link:hover {
+            cursor: pointer;
+            text-decoration: underline;
         }
 
         footer {
@@ -290,6 +309,49 @@
             }
         }
 
+        @media only screen and (max-width: 500px) {
+            button {
+                width: 20rem;
+                height: 6rem;
+                
+            }
+
+            .btn {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .footer-grid-container {
+            margin: 0 auto;
+            text-align: center; 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "face insta" 
+                "twit linked";
+            }
+
+            .social {
+                margin-top: 0rem;
+                margin-bottom: 0rem;
+            }
+        }
+
+        @media only screen and (max-width: 350px) {
+            header {
+                height: 5rem;
+            }
+
+            .logo {
+                display: none;
+            }
+        }
+
+        
+
     </style>
 
 </head>
@@ -309,7 +371,7 @@
     <main>
         <div id="top">
             <img class="logo-img" src="assets/CPP Logo.jpg">
-
+            
             <div class="jumbotron">
                 <h1 id="white">HOW EVERY CONTRACTOR CAN ACCUMULATE PROFITS AND GROW THEIR BUSINESS</h1>
                 <h2 id="white-2" >(Without Personal Assets Being Attached!)</h2>
@@ -319,8 +381,10 @@
         <div class="jeff-grid-container pt-3 pb-3" id="contact">
             <img class="jeff-img" src="assets/Jeff Newman headshot small.jpg">
             <div class="estimate">
-                <h2 id="white-2" class="pt-3 pb-3">Call Jeff Newman TODAY for your free 30 minute strategy session <a href="tel:301-321-1914">(301)321-1914</a></h2>
+                <h2 id="white-2" class="pt-3 pb-3">Call Jeff Newman TODAY for your free 30 minute strategy session<br> <a href="tel:305-321-1914">(305)321-1914</a></h2>
                 <a href="https://calendly.com/jgnewman" target="_blank"><button class="btn">Book with Calendy.com!</button></a>
+                
+                
             </div>
         </div>
 
@@ -346,7 +410,12 @@
 
         </div>
 
+        
+
         <footer>
+            <div class="address">
+                <a class="address-link" href="https://www.google.com/maps/place/10375+Centurion+Pkwy+%23300,+Jacksonville,+FL+32256/@30.2485139,-81.5495887,17z/data=!3m1!4b1!4m5!3m4!1s0x88e5ca9b6b23b449:0x128d17a57dc6ff8c!8m2!3d30.2485139!4d-81.5474" target="_blank"><h4>10375 Centurion Pkwy, #300, Jacksonville, FL 32256</h4></a>
+            </div>
             <div class="footer-grid-container">
                 <div class="face social">
                     <a href="" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/96/000000/facebook.png"/></a>
@@ -358,7 +427,7 @@
                     <a href="" target="_blank"><img src="https://img.icons8.com/material-sharp/96/000000/twitter.png"/></a>
                 </div>
                 <div class="linked social">
-                    <a href="" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/96/000000/linkedin.png"/></a>
+                    <a href="https://www.linkedin.com/in/jeff-newman-904/" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/96/000000/linkedin.png"/></a>
                 </div>
             </div>
         </footer>
