@@ -22,6 +22,7 @@
         }
 
         header {
+            opacity: .8;
             border-bottom: 1px solid black;
             height: 6rem;
             width: 100%;
@@ -32,6 +33,10 @@
             background-color: white;
             overflow: hidden;
             top: 0;
+        }
+
+        header:hover {
+            opacity: 1;
         }
 
         .logo {
@@ -59,16 +64,27 @@
             margin-bottom: 2rem;
         }
 
+        .nav-btn {
+            font-size: 2.5rem;
+            color: black;
+            margin-right: 1rem;
+        }
+
+        .nav-btn:hover {
+            text-decoration: underline;
+            color: grey;
+        }
+
         .btn {
             background: white;
-            background-image: -webkit-linear-gradient(top, #87CEEB, #0066ff);
-            background-image: -moz-linear-gradient(top, #87CEEB, #0066ff);
-            background-image: -ms-linear-gradient(top, #87CEEB, #0066ff);
-            background-image: -o-linear-gradient(top, #87CEEB, #0066ff);
-            background-image: linear-gradient(to bottom, #87CEEB, #0066ff);
-            color: black;
+            background-image: -webkit-linear-gradient(top, #006699, #0066ff);
+            background-image: -moz-linear-gradient(top, #006699, #0066ff);
+            background-image: -ms-linear-gradient(top, #006699, #0066ff);
+            background-image: -o-linear-gradient(top, #006699, #0066ff);
+            background-image: linear-gradient(to bottom, #006699, #0066ff);
+            color: white;
             font-size: 20px;
-            padding: 5px 10px 5px 10px;
+            padding: 10px 10px 10px 10px;
             text-decoration: none;
             margin-left: .5rem;
             margin-right: .5rem;
@@ -76,11 +92,11 @@
         
         .btn:hover {
             color: white;
-            background-image: -webkit-linear-gradient(top, #0066ff, #87CEEB);
-            background-image: -moz-linear-gradient(top, #0066ff, #87CEEB);
-            background-image: -ms-linear-gradient(top, #0066ff, #87CEEB);
-            background-image: -o-linear-gradient(top, #0066ff, #87CEEB);
-            background-image: linear-gradient(to bottom, #0066ff, #87CEEB);
+            background-image: -webkit-linear-gradient(top, #0066ff, #006699);
+            background-image: -moz-linear-gradient(top, #0066ff, #006699);
+            background-image: -ms-linear-gradient(top, #0066ff, #006699);
+            background-image: -o-linear-gradient(top, #0066ff, #006699);
+            background-image: linear-gradient(to bottom, #0066ff, #006699);
             text-decoration: none;
         }
 
@@ -216,17 +232,20 @@
         }
 
         .address-link {
-            color: black;
+            color: white;
         }
 
         .address-link:hover {
             cursor: pointer;
             text-decoration: underline;
+            color: lightblue;
         }
 
         footer {
+            background-image: url('https://wallpaper-house.com/data/out/10/wallpaper2you_424040.jpg');
+            background-repeat: repeat;
+            background-size: cover;
             height: auto;
-            background-color: white;
         }
 
         .footer-grid-container {
@@ -363,8 +382,8 @@
         </div>
         <nav class="banner-menu">
             <ul class="guide">
-                <a class="btn" href="#top"><li>Home</li></a>
-                <a class="btn" href="#contact"><li>Contact Us</li></a>
+                <a class="nav-btn" href="#top"><li>Home</li></a>
+                <a class="nav-btn" href="#contact"><li>Contact</li></a>
             </ul>
         </nav>
     </header>
@@ -412,22 +431,22 @@
 
         
 
-        <footer>
+        <footer style="background-color: black;">
             <div class="address">
                 <a class="address-link" href="https://www.google.com/maps/place/10375+Centurion+Pkwy+%23300,+Jacksonville,+FL+32256/@30.2485139,-81.5495887,17z/data=!3m1!4b1!4m5!3m4!1s0x88e5ca9b6b23b449:0x128d17a57dc6ff8c!8m2!3d30.2485139!4d-81.5474" target="_blank"><h4>10375 Centurion Pkwy, #300, Jacksonville, FL 32256</h4></a>
             </div>
             <div class="footer-grid-container">
                 <div class="face social">
-                    <a href="" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/96/000000/facebook.png"/></a>
+                    <a href="" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/96/ffffff/facebook.png"/></a>
                 </div>
                 <div class="insta social">
-                    <a href="" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/96/000000/instagram-new.png"/></a>
+                    <a href="" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/96/ffffff/instagram-new.png"/></a>
                 </div>
                 <div class="twit social">
-                    <a href="" target="_blank"><img src="https://img.icons8.com/material-sharp/96/000000/twitter.png"/></a>
+                    <a href="" target="_blank"><img src="https://img.icons8.com/material-sharp/96/ffffff/twitter.png"/></a>
                 </div>
                 <div class="linked social">
-                    <a href="https://www.linkedin.com/in/jeff-newman-904/" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/96/000000/linkedin.png"/></a>
+                    <a href="https://www.linkedin.com/in/jeff-newman-904/" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/96/ffffff/linkedin.png"/></a>
                 </div>
             </div>
         </footer>
